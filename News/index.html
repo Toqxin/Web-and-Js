@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="waiter"><h1>News®</h1></div>
+    <header>
+        <h1 id="head1">News</h1>
+    </header>
+    <div id="overlay" class="overlay"></div>
+    <button id="sidebar-toggle"><img src="drag-right.png" ></button>
+    <div class="wrapper">
+        <div class="container" id="newsContainer">
+            
+        </div>
+        <aside id="sidebar">
+            <h2>News</h2>
+            <ul>
+                <li id="home-page">Home Page</li>
+                <li id="business-page">Business News</li>
+                <li id="search-news">Search News</li>
+            </ul>
+        </aside>
+    </div>
+    <div class="container" id="businessNews" style="display: none;">
+        
+    </div>
+    <div id="search">
+        <div id="inside">
+            <input type="text" id="searchInput" placeholder="search news">
+            <button id="searchBtn">Search</button>
+            <button id="cross">X</button>
+        </div>
+        
+        <div id="searchResults"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
