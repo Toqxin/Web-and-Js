@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Nabla&family=Vidaloka&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: navy;
+}
+
+#container {
+    text-align: center;
+}
+
+#head {
+    background-color:red;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 20px;
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+    border: 10px solid black;
+}
+
+#head h1{
+    font-family: 'Nabla', 'Vidaloka', cursive, serif;
+    font-size: 40px;
+}
+
+#searching{
+    margin-right: 40px;
+}
+
+#pokemon-input{
+    width: 400px;
+    padding: 10px;
+    outline: none;
+    border-radius: 20px;
+    border: 5px solid black;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+#search-button{
+    width: 100px;
+    padding: 10px;
+    outline: none;
+    border-radius: 20px;
+    border: 5px solid black;
+    font-size: 16px;
+    font-weight: bold;
+    transform: translateX(-100px);
+    transition: transform .3s linear;
+    background-color:navy;
+    color: white;
+}
+
+#search-button:hover{
+    background-color: navy;
+    color: gold;
+    transform: translateX(-80px);
+    cursor: pointer;
+}
+
+#cover-cards{
+    width: 70%;
+    height: 900px;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+
+}
+
+#first-card{
+    width: 40%;
+    height: 100%;
+    background-color:skyblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-right: 60px;
+    border-radius: 40px;
+    border: 10px solid black;
+}
+
+#first-card:hover{
+    background-color:rgb(3, 190, 13);
+}
+
+#first-card h1{
+    text-align: center;
+    color:white;
+    font-size: 100px;
+    font-family: 'Nabla', 'Vidaloka', cursive, serif;
+    margin-top: -10px;
+}
+
+#first-card img{
+    width: 350px;
+    position: relative;
+}
+
+#second-card{
+    width: 50%;
+    height: 100%;
+    background-color: teal;
+    color: white;
+    text-align: left;
+    font-size:24px;
+    font-family:sans-serif;
+    line-height:50px;
+    overflow-y: scroll;
+    padding-left: 20px;
+    padding-top: 5px;
+    border-radius:30px 10px 10px 30px ;
+    border: 10px solid black;
+}
+
+
+@media (max-width: 1900px){
+    body{
+        display: none;
+    }
+}
+
+
+@media (max-height: 1070px){
+    body{
+        display: none;
+    }
+}
