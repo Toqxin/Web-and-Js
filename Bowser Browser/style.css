@@ -1,0 +1,270 @@
+@import url('https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap');
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+
+#search-area{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-bottom: 20px;
+    text-align: center;
+    background-color: rgb(0, 66, 107);
+}
+
+#bowser{
+    width: 70px;
+    padding:10px 5px 20px 5px;
+    height: auto;
+    border: 5px solid black;
+    border-radius: 0 0 50% 50%;
+    background:linear-gradient(135deg, azure, gold);
+}
+
+
+#entry-area{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition:background-color .2s ease-in-out;
+}
+
+#tools{
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+}
+
+.at,.at2{
+    font-size: 16px;
+    color: azure;
+    font-family: 'Yeseva One', serif;
+    margin-right: 40px;
+    font-weight: bold;
+}
+
+.at:hover{
+    color:black;
+    transition:color .15s linear;
+}
+.at2:hover{
+    color:black;
+    transition:color .15s linear;
+}
+
+
+#searchInput{
+    width:50%;
+    height: 40px;
+    padding-left: 20px;
+    outline: none;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 50px;
+    border: 3px solid black;
+}
+
+#searchButton{
+    width: 35px;
+    padding: 20px;
+    cursor: pointer;
+}
+
+#searchButton.active{
+    animation: bounce .5s 2; 
+}
+
+@keyframes bounce{
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px); 
+    }
+}
+
+#results{
+    width: 90%;
+    height: 1000px;
+    margin-left: 5%;
+    padding: 20px;
+    font-size: 20px;
+    font-family: sans-serif;
+}
+
+
+.digital-clock {
+    font-family: 'Yeseva One', serif;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    padding: 8px;
+    color: azure;
+    position: absolute;
+    right: 30px;
+    border-bottom: 3px solid azure;
+}
+#gresults{
+    display: flex;
+    align-items: center;
+}
+
+
+@media (max-width: 1200px) {
+    body {
+      font-size: 14px;
+    }
+  
+    #search-area {
+        width: 100%;
+    }
+  
+    #bowser{
+        width: 30px;
+        padding:5px 5px 15px 5px;
+        height: auto;
+        border: 2px solid black;
+        border-radius: 0 0 50% 50%;
+        background:linear-gradient(135deg, azure, gold);
+    }
+  
+    #searchInput {
+        width: 40%;
+        font-size: 10px;
+        height: 20px;
+        border: 2px solid black;
+    }
+  
+    #searchButton {
+        width: 20px; 
+    }
+    #clock {
+        display: none; 
+    }
+    #results{
+        font-size: 12px;
+    }
+
+    .at,.at2{
+        font-size: 9px;
+        margin-right: 10px;
+    }
+    #bowser{
+        width: 40px;
+        padding:10px 5px 20px 5px;
+        height: auto;
+        border: 2px solid black;
+        border-radius: 0 0 50% 50%;
+        background:linear-gradient(135deg, azure, gold);
+    }
+    #gresults{
+        display: flex;
+        align-items: center;
+    }
+    
+  }
+
+  @media (max-width: 1500px){
+    body {
+        font-size: 14px; 
+      }
+
+    #search-area {
+        width: 100%;  
+    }
+
+    #bowser {
+    width: 50px;  
+    }
+
+    #searchInput {
+    width: 40%;
+    font-size: 10px;
+    height: 20px;
+    border: 2px solid black; 
+    }
+
+    #searchButton {
+        width: 20px;  
+    }
+    #clock {
+        display: none; 
+    }
+    #results{
+        font-size: 12px;
+    }
+
+    .at,.at2{
+        font-size: 9px;
+        margin-right: 10px;
+    }
+    #bowser{
+        width: 40px;
+        padding:10px 5px 20px 5px;
+        height: auto;
+        border: 2px solid black;
+        border-radius: 0 0 50% 50%;
+        background:linear-gradient(135deg, azure, gold);
+    }
+    #gresults{
+        display: flex;
+        align-items: center;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    
+    #results {
+      width: 100%;  
+      margin-left: 0;  
+      font-size: 16px;  
+    }
+    #clock {
+        display: none;  
+    }
+    #results{
+        font-size: 12px;
+    }
+    .at,.at2{
+        font-size: 9px;
+        margin-right: 10px;
+    }
+    #searchButton {
+        width: 20px;  
+    }
+    #bowser{
+        width: 30px;
+        padding:5px 5px 15px 5px;
+        height: auto;
+        border: 2px solid black;
+        border-radius: 0 0 50% 50%;
+        background:linear-gradient(135deg, azure, gold);
+    }
+    #gresults{
+        display: flex;
+        align-items: center;
+    }
+    #searchInput {
+        width: 40%;
+        font-size: 10px;
+        height: 20px;
+        border: 2px solid black;  
+    }
+    #search-area {
+        width: 100%;
+        backdrop-filter:none; 
+    }
+
+  }
+  
